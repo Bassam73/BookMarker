@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="bookmarker">
+            <div class="container my-5">
+                <div class="header text-center my-2">
+                    <h1 class="display-5 py-2 ">Bookmarker</h1>
+                </div>
+                <div class="bm-input  ">
+                    <h2 class="my-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                    <label for="BMNAME" class="mb-2"><i class="fa-solid fa-book-bookmark"></i>  Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control mb-4" onkeyup="nameValidation()" id="siteName">
+                    <label for="wburl" class="mb-2"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input type="text"  class="form-control mb-5" onkeyup="urlValidation()" placeholder="Website URL" id="siteUrl">
+                    <button class="btn submit-button mb-4" onclick="addURL()">Sumbit</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="results">
+            <div class="container">
+                <table class="table bg-white text-center">
+                    <thead>
+                        <tr>
+                            <th>index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="demo">
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

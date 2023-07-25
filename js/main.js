@@ -43,10 +43,10 @@ function displayARR() {
     for(var i = 0 ; i < arrURLS.length; i++){
         cartona+=`
         <tr>
-        <td>${i+1}</td>
-        <td>${arrURLS[i].name}</td>
-        <td><a href="${arrURLS[i].URL}" target="_blank"><button class="btn visit-btn"><i class="fa-solid fa-eye"></i> Visit</button></td></a>
-        <td><button onclick="deleteItem(${i})" class="btn delete-btn"><i class="fa-solid fa-trash"></i> Delete</button></td>
+        <td class="align-middle">${i+1}</td>
+        <td class="align-middle">${arrURLS[i].name}</td>
+        <td class="align-middle"><a href="${arrURLS[i].URL}" target="_blank"><button class="btn visit-btn"><i class="fa-solid fa-eye"></i> Visit</button></td></a>
+        <td class="align-middle"><button onclick="deleteItem(${i})" class="btn delete-btn"><i class="fa-solid fa-trash"></i> Delete</button></td>
         </tr>
         `
     }
